@@ -1,10 +1,9 @@
 import cgi
-from pathlib import Path
 
 from database import conn
+from jinja2 import Environment, FileSystemLoader
 
-site_dir = Path('site')
-site_dir.mkdir(exist_ok=True)
+env = Environment(loader=FileSystemLoader('templates'))
 
 
 def get_posts_from_database(post_id=None):
@@ -19,8 +18,8 @@ def get_posts_from_database(post_id=None):
 
 
 def render_template(template_name, **context):
-    template = Path(template_name).read_text()
-    return template.format(**context).encode('utf-8')
+    template = env.get_template(template_name)
+    return template.render(**context).encode('utf-8')
 
 
 def get_post_list(posts):
@@ -50,7 +49,7 @@ def application(environ, start_response):
 
     if path == '/' and method == 'GET':
         posts = get_posts_from_database()
-        body = render_template('list.template.html', post_list=get_post_list(posts=posts))
+        body = render_template('list.template.html', post_list=posts)
         status = '200 OK'
     elif path.split('/')[-1].isdigit() and method == 'GET':
         post_id = path.split('/')[-1]
