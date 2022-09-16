@@ -1,4 +1,4 @@
-# Pure Ppython Bblog
+# Pure Python Blog
 
 ## A simple pure python blog to improve my knowledge in Python 
 
