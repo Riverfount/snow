@@ -1,7 +1,6 @@
 # Snow a simple web framework
 
-This repo is an effort to understand how the web framework works. We start with a simple static page render and develop 
-to a simple framework called Snow.This repository is an effort to understand how the web framework works. We started 
+This repository is an effort to understand how the web framework works. We started 
 with a simple static page rendering engine until we arrived at a simple framework called Snow.
 
 ## First way with Pure Python 
