@@ -20,3 +20,13 @@ These libraries are on requirements.txt file.
 We'll follow these steps:
 
 - improve the app with Jinja2 template engine
+
+## Third way is to convert the WSGI server to a Web Framework
+
+After creating a static HTML render and migrating it to a simple WSGI dynamic server, now we improve our knowledge by converting the WSGI server to a simple Web Framework called Snow.
+
+We followed these steps:
+
+- Create a class called Snow, that is our framework
+- Instantiate an app object from our class
+- Create business rules in a specific module to decouple our logic from our implementation
