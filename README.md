@@ -1,8 +1,12 @@
-# Blog build with Python
+# Snow a simple web framework
+
+This repository is an effort to understand how the web framework works. We started 
+with a simple static page rendering engine until we arrived at a simple framework called Snow.
 
 ## First way with Pure Python 
 
-The main goal of this repository is to study Python to develop a web application without any framework or external library just using built-in functions and classes of Python itself.
+The main goal of this repository is to study Python to develop a web application without any framework or external 
+library just using built-in functions and classes of Python itself.
 
 We'll follow these steps:
 
@@ -23,7 +27,8 @@ We'll follow these steps:
 
 ## Third way is to convert the WSGI server to a Web Framework
 
-After creating a static HTML render and migrating it to a simple WSGI dynamic server, now we improve our knowledge by converting the WSGI server to a simple Web Framework called Snow.
+After creating a static HTML render and migrating it to a simple WSGI dynamic server, now we improve our knowledge by 
+converting the WSGI server to a simple Web Framework called Snow.
 
 We followed these steps:
 
