@@ -25,7 +25,7 @@ posts = [
     {
         'title': 'Como criar um blod utiliznado Python',
         'content': '''\
-        Neste tutorial vc aprenderá como criar um blog utilizando Python.
+        Neste tutorial vc aprenderá como criar um snow utilizando Python.
         <pre>import make_a_blog</pre>
         ''',
         'author': 'Guido von Rossum'

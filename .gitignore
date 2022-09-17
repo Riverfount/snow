@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Specific to this project
-/blog/site/
+/snow/site/
